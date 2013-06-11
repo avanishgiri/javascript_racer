@@ -1,0 +1,32 @@
+<table class="racer_table" data-id="<%= @game_id %>">
+<% @players.each_with_index do |player, i| %>
+  <tr id="player<%= i+1 %>" data-id="<%= player.id %>" data-name="<%= player.name %>" >
+    <td class="active"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+<% end %>
+</table>
+
+
+<!-- <div id="endgame" class="hidden">
+  <form class="player_names" action="/" method="POST">
+    <input type="hidden" name="players[]" value="<%= @players[0].name %>" >
+    <input type="hidden" name="players[]" value="<%= @players[1].name %>" >
+    <input type="submit" value="Play Again">
+  </form>
+  <button id="restart">Play Again</button>
+  <button id="new_players">Pick New Players</button>
+</div> -->
+
+

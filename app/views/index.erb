@@ -1,0 +1,20 @@
+<h1>This is a header for a game.</h1>
+
+<form class="player_names" action="/" method="POST">
+  <input type="text" placeholder="Player One Name" name="players[]">
+  <input type="text" placeholder="Player Two Name" name="players[]">
+  <input type="submit" value="Start Game">
+</form>
+
+<div id="racetrack"></div>
+
+<div id="instructions" class="hidden">
+<h3>Instructions</h3>
+<p>Player One: hit "q" really fast!</p>
+<p>Player Two: hit "p" really fast!</p>
+</div>
+
+<div id="winner_message" class="hidden">
+  <h1><span id="winner_name"></span> won!</h1>
+  <h3>The game lasted <span id="duration"></span> seconds.</h3>
+</div>
